@@ -15,21 +15,6 @@ const searchBtn = document.getElementById("submit");
 
 var my_ip;
 
-// function fetchMyIP() {
-//   var p;
-//   fetch(ipAPI)
-//     .then((res) => res.json())
-//     .then((data) => {
-//       p = data.ip;
-//       my_ip = p;
-//       return p;
-//     });
-//   return p;
-// }
-
-// fetchMyIP();
-// console.log(fetchMyIP());
-
 function fetchAPI(input) {
   var lat;
   var long;
@@ -47,18 +32,6 @@ function fetchAPI(input) {
       L.marker([data.location.lat, data.location.lng]).addTo(map);
       map.flyTo([lat, long], 15);
     });
-
-  // function getLat(latitude) {
-  //   latitude = lat;
-  //   return latitude;
-  // }
-
-  // function getLong(longitude) {
-  //   long = longitude;
-  //   return longitude;
-  // }
-
-  // return getLat, getLong;
 }
 
 function getLat(input) {
